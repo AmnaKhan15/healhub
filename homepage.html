@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Homepage</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="card.css">
+</head>
+
+<body>
+  <nav class="navbar" style="background-color: #ffffff;">
+    <div class="container">
+      <a class="navbar-brand" href="homepage.html">
+        <img src="images/logo.png" alt="Healhub" width="200" height="65" href="homepage.html">
+      </a>
+
+      <ul class="nav nav-underline" class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link" style="color: black;" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+            aria-controls="offcanvasExample">Doctors</a>
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title display-6" id="offcanvasExampleLabel" style="font-size: 23px;">Find doctor by
+                Speciality</h5>
+            </div>
+            <div class="offcanvas-body display-6" style="font-size: 16px;">
+              <div>
+                <p><a href="doctors_list.php"
+                    class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Gynecologist</a>
+                </p>
+                <p><a href="doctors_list.php"
+                    class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Dermatologist</a>
+                </p>
+                <p><a href="doctors_list.php"
+                    class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Neurologist</a>
+                </p>
+                <p><a href="doctors_list.php"
+                    class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Psychiatrist</a>
+                </p>
+                <p><a href="doctors_list.php"
+                    class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">General
+                    Physician</a></p>
+              </div>
+            </div>
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title display-6" id="offcanvasExampleLabel" style="font-size: 23px;">Find doctor by
+                Treatment</h5>
+            </div>
+            <div class="offcanvas-body display-6" style="font-size: 15px;">
+              <div>
+                <p><a href="doctors_list.php"
+                    class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">MRI</a>
+                </p>
+                <p><a href="doctors_list.php"
+                    class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Normal
+                    Devliery</a></p>
+                <p><a href="doctors_list.php"
+                    class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">CT
+                    Scan</a></p>
+                <p><a href="doctors_list.php"
+                    class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Coronavirus</a>
+                </p>
+                <p><a href="doctors_list.php"
+                    class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">LASER eye
+                    surgery</a></p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color: black;" href="appointments.php">Appointments</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color: black;" href="lab.html">Labs & Results</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color: black;" href="helpsupport.html">Help & Support</a>
+        </li>&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <a type="button" class="btn btn-light"
+          style="--bs-btn-padding-y: .65rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .78rem;" href="login.html"
+          role="button">Login</a>
+
+        <a class="btn btn-outline-primary"
+          style="--bs-btn-padding-y: .65rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .78rem;"
+          href="register.html" role="button">Register</a>
+      </ul>
+
+    </div>
+  </nav>
+  <div style="background-image: url(images/bg.jpg);">
+    <div class="p-3 mb-2 text-emphasis-info">
+      <h1 class="display-1" style="text-align: center; padding-top: 100px;">Healthcare for all</h1>
+      <p class="lead" style="text-align: center;"><b>Book your appointment now.</b></p>
+
+      <div class="container">
+        <form class="d-flex" role="search" method="GET" action="search.php">
+          <input class="form-control me-2" type="search" name="doctor_name" placeholder="Search for doctors, specialties, services and labs" aria-label="Search">
+          <button class="btn btn-outline-info" type="submit">Go</button>
+        </form><br><br>
+      </div>      
+
+
+    <p class="display-5" style="text-align:center; font-size: 25px; font-weight: 350;">Find the best doctor near you</p>
+    <br>
+    <div>
+      <header>
+        <style>
+          .carousel-item {
+            height: 65vh;
+            min-height: 350px;
+            background: no-repeat center center scroll;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+          }
+        </style>
+        <div class="container shadow-lg p-3 mb-5">
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active img-fluid shadow-lg p-3 mb-5"
+                style="background-image: url(images/large1.jpg)">
+                <div class="carousel-caption bg-dark p-2 text-white bg-opacity-50">
+                  <h5 class="display-5" style="font-size: 25px; font-weight: 350;">Your Partner in Health and Wellness
+                  </h5>
+                  <p class="display-5" style="font-size: 16px; font-weight: 350;">From preventative care to chronic
+                    disease management, our healthcare services are tailored to meet your
+                    unique health needs.</p>
+                </div>
+              </div>
+              <div class="carousel-item img-fluid shadow-lg p-3 mb-5" style="background-image: url(images/large2.jpg)">
+                <div class="carousel-caption bg-dark p-2 text-white bg-opacity-50">
+                  <h5 class="display-5" style="font-size: 25px; font-weight: 350;">Transforming Healthcare, One Patient
+                    at a Time</h5>
+                  <p class="display-5" style="font-size: 16px; font-weight: 350;">At our healthcare practice, we're
+                    passionate about helping you achieve your health goals, with
+                    personalized care and attention to detail.</p>
+                </div>
+              </div>
+              <div class="carousel-item img-fluid shadow-lg p-3 mb-5" style="background-image: url(images/large3.jpg)">
+                <div class="carousel-caption bg-dark p-2 text-white bg-opacity-50">
+                  <h5 class="display-5" style="font-size: 25px; font-weight: 350;">Invested in Your Health, Committed to
+                    Your Care</h5>
+                  <p class="display-5" style="font-size: 16px; font-weight: 350;">We're committed to staying up-to-date
+                    on the latest medical research and
+                    technology, to ensure that you receive the best possible care.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </header><br><br>
+
+
+      <section class="wrapper">
+        <div class="row">
+          <div class="col-sm-3" href="appointments.php">
+            <div class="card text-white card-has-bg click-col img-fluid"
+              style="background-image:url(images/stock.jpg);">
+              <img class="card-img d-none img-fluid" src="images/stock.jpg" alt="">
+              <div class="card-img-overlay d-flex flex-column">
+                <div class="card-body">
+                  <h4 class="card-title mt-0 "><a class="text-white" href="appointments.php">Find and book an
+                      appointment</a></h4>
+                  <small><i class="far fa-clock"></i><b>10000+ </b>verified doctors with online consultations committed
+                    to improving the
+                    well-being of our community.</small>
+                  <br><br>
+                </div>
+                <div class="card-footer">
+                  <div class="d-grid gap-2">
+                    <a href="appointments.php" class="btn btn-outline-light" style="border-radius: 200px;">Book
+                      Appointment</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card text-white card-has-bg click-col img-fluid"
+              style="background-image:url(images/stock2.jpeg);">
+              <img class="card-img d-none img-fluid" src="images/stock2.jpeg" alt="">
+              <div class="card-img-overlay d-flex flex-column">
+                <div class="card-body">
+                  <h4 class="card-title mt-0 ">
+                    <a class="text-white" herf="#">Book lab tests</a>
+                  </h4>
+                  <small><i class="far fa-clock"></i>Schedule your lab tests in just a few clicks, from the comfort of
+                    your own home,
+                    saving
+                    you time.
+                  </small><br><br>
+                </div>
+                <div class="card-footer">
+                  <div class="d-grid gap-2">
+                    <a href="lab.html" class="btn btn-outline-light" style="border-radius: 200px;">Get started</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card text-white card-has-bg click-col img-fluid"
+              style="background-image:url(images/stock3.jpg);">
+              <img class="card-img d-none img-fluid" src="images/stock3.jpg" alt="">
+              <div class="card-img-overlay d-flex flex-column">
+                <div class="card-body">
+                  <h4 class="card-title mt-0 ">
+                    <a class="text-white" herf="lab">Download and review results</a>
+                  </h4>
+                  <small>
+                    <i class="far fa-clock"></i> With a focus on patient safety and comfort, we provide a welcoming
+                    environment for
+                    all
+                    those in need of medical care.</small>
+                  <br><br>
+                </div>
+                <div class="card-footer">
+                  <div class="d-grid gap-2">
+                    <a href="lab.html" class="btn btn-outline-light" style="border-radius: 200px;">Access your
+                      resources</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card text-white card-has-bg click-col img-fluid"
+              style="background-image:url(images/stock4.jpg);">
+              <img class="card-img d-none img-fluid" src="images/stock4.jpg" alt="">
+              <div class="card-img-overlay d-flex flex-column">
+                <div class="card-body">
+                  <h4 class="card-title mt-0 ">
+                    <a class="text-white" herf="#">Health blog</a>
+                  </h4>
+                  <small>
+                    <i class="far fa-clock"></i> Whether you're seeking routine care or specialized treatment, our
+                    healthcare center
+                    is
+                    your one-stop-shop for all your health needs.
+                  </small><br><br>
+                </div>
+                <div class="card-footer">
+                  <div class="d-grid gap-2">
+                    <a href="healthblog.php" class="btn btn-outline-light" style="border-radius: 200px;">Explore
+                      further</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div style="width: 95%; margin: auto;">
+        <div class="accordion shadow-lg" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                aria-controls="panelsStayOpen-collapseOne">
+                Insurance and Payment Information
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+              <div class="accordion-body">
+                Patients need to understand their payment options and insurance types accepted to make informed
+                decisions
+                about their healthcare. A healthcare website's insurance and payment section should provide clear and
+                concise information about co-pays, deductibles, billing, payment options, financial assistance programs,
+                pricing transparency, and insurance pre-authorization. Patients should also have access to resources
+                that
+                explain insurance and payment options in detail and provide answers to frequently asked questions. This
+                section can help patients avoid surprises in billing and ensure they receive the care they need without
+                financial hardship.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseTwo">
+                Follow-up Care and Recovery
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                Follow-up care and recovery are critical components of healthcare services, providing support to
+                patients
+                after they receive medical treatment. A healthcare website's follow-up care and recovery section should
+                offer comprehensive information about post-treatment instructions, pain management, wound care, physical
+                therapy, occupational therapy, speech therapy, home health services, rehabilitation services, mental
+                health
+                support, nutrition and diet planning, and exercise recommendations. This section can help patients
+                understand how to manage pain and discomfort, care for their wounds, take their medication properly,
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseThree">
+                Medical Records and Privacy
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                Medical records and privacy are essential components of healthcare services. A healthcare website's
+                medical
+                records and privacy section should provide patients with information on accessing and requesting copies
+                of
+                their medical records, electronic health records (EHR), HIPAA privacy rules, patient privacy rights, and
+                medical record release forms. The section should also describe how patients can amend their medical
+                records
+                and how long medical records are retained. Privacy and security measures should be clearly outlined,
+                along
+                with information on patient confidentiality agreements and data breach notification policies. Patients
+                should also have access to resources explaining state and federal privacy laws, data privacy officer
+                contact
+                information, and patient rights to file complaints.
+              </div>
+            </div>
+          </div>
+        </div><br><br>
+      </div>
+      </div></div>
+    <footer class="footer-20192">
+      <div class="site-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm">
+              <a href="#" class="footer-logo">HealHub</a>
+              <p class="copyright">
+                <small>&copy; 2023</small>
+              </p>
+            </div>
+            <div class="col-sm">
+              <h3>More</h3>
+              <ul class="list-unstyled links">
+                <li><a href="#">Health Blog</a></li>
+                <li><a href="#">Pharmacy</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Patient Portals</a></li>
+              </ul>
+            </div>
+            <div class="col-sm">
+              <h3>Company</h3>
+              <ul class="list-unstyled links">
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Our Team</a></li>
+              </ul>
+            </div>
+            <div class="col-sm">
+              <h3>Further Information</h3>
+              <ul class="list-unstyled links">
+                <li><a href="#">Terms &amp; Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Partnerships</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h3>Follow us</h3>
+              <ul class="list-unstyled social">
+                <li><a href="#"><span class="icon-facebook"><img src="images/fb.png" width="40px" height="40px"
+                        alt="fb"></span></a></li>
+                <li><a href="#"><span class="icon-instagram"><img src="images/ig.png" alt="ig" width="30px"
+                        height="30px"></span></a></li>
+                <li><a href="#"><span class="icon-twitter"><img src="images/twt.png" alt="twt" width="35px"
+                        height="35px"></span></a></li>
+                <li><a href="#"><span class="icon-whatsapp"><img src="images/wt.webp" alt="wt" width="34px"
+                        height="34px"></span></a></li>
+                <li><a href="#"><span class="icon-messenger"><img src="images/msg.png" alt="msg" width="30px"
+                        height="30px"></span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Check if the session cookie exists
+      if (!document.cookie.includes('healhub_session')) {
+        // Redirect to the login page
+        window.location.href = 'login.html';
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>
