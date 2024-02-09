@@ -63,13 +63,13 @@ $user_type = $_SESSION['user_type'];
 <body>
 <nav class="navbar" style="background-color: #ffffff;">
     <div class="container">
-      <a class="navbar-brand" href="homepage.html">
-        <img src="images/logo.png" alt="Healhub" width="200" height="65" href="homepage.html">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo.png" alt="Healhub" width="200" height="65" href="index.html">
       </a>
 
       <ul class="nav nav-underline" class="nav justify-content-center">
         <li class="nav-item">
-          <a class="nav-link" style="color: black;" data-bs-toggle="offcanvas" href="homepage.html" role="button"
+          <a class="nav-link" style="color: black;" data-bs-toggle="offcanvas" href="index.html" role="button"
             aria-controls="offcanvasExample">Doctors</a>
           <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
             aria-labelledby="offcanvasExampleLabel">
@@ -165,7 +165,7 @@ $user_type = $_SESSION['user_type'];
                             <p><strong>Email:</strong> <?php echo $email; ?></p>
                             <p><strong>Location:</strong> <?php echo $city; ?></p>
                             <p><strong>Designation:</strong> <?php echo $user_type; ?></p>
-                            <a href="homepage.html" class="button-custom">
+                            <a href="index.html" class="button-custom">
                                 <div class="button__line"></div>
                                 <div class="button__line"></div>
                                 <span class="button__text">Return to the homepage</span>

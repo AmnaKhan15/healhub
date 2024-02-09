@@ -62,8 +62,8 @@ $result = $conn->query($query);
 <body>
     <nav class="navbar" style="background-color: #ffffff;">
         <div class="container">
-            <a class="navbar-brand" href="homepage.html">
-                <img src="images/logo.png" alt="Healhub" width="200" height="65" href="homepage.html">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="Healhub" width="200" height="65" href="index.html">
             </a>
 
             <ul class="nav nav-underline" class="nav justify-content-center">
